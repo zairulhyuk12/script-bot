@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bo | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bot | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -350,7 +350,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/syfqsamvpn/access/main/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/kenzotelco/ip-bot/main/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
