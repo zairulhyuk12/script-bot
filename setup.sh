@@ -20,7 +20,7 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-# https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bot 
+https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bot 
 MYIP=$(curl -sS ipv4.icanhazip.com)
 Name=$(curl -sS https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bot | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
