@@ -69,7 +69,7 @@ portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '
 if [ -f "/etc/systemd/system/scvpssshws.service" ]; then
 clear
 else
-wget -q -O /usr/bin/proxy3.js "https://raw.githubusercontent.com/syfqsamvpn/scriptvps/main/ssh/proxy3.js"
+wget -q -O /usr/bin/proxy3.js "https://raw.githubusercontent.com/zairulhyuk12/script-bot/main/ssh/proxy3.js"
 cat <<EOF> /etc/systemd/system/scvpssshws.service
 [Unit]
 Description=WSenabler
@@ -96,7 +96,7 @@ PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 if [[ ! -z "${PID}" ]]; then
 echo "Already ON !"
 else
-wget -q -O /usr/bin/ssh-wsenabler "https://raw.githubusercontent.com/syfqsamvpn/scriptvps/main/ssh/sshws-true.sh" && chmod +x /usr/bin/ssh-wsenabler && /usr/bin/ssh-wsenabler
+wget -q -O /usr/bin/ssh-wsenabler "https://raw.githubusercontent.com/zairulhyuk12/script-bot/main/ssh/sshws-true.sh" && chmod +x /usr/bin/ssh-wsenabler && /usr/bin/ssh-wsenabler
 systemctl daemon-reload >/dev/null 2>&1
 systemctl enable scvpssshws.service >/dev/null 2>&1
 systemctl start scvpssshws.service >/dev/null 2>&1

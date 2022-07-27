@@ -51,7 +51,7 @@ red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
 clear
-curl -sS https://raw.githubusercontent.com/syfqsamvpn/scriptvps/main/resources/ascii-home
+curl -sS https://raw.githubusercontent.com/zairulhyuk12/script-bot/main/resources/ascii-home
 echo "Add Domain"
 echo "Progress..."
 sleep 2
