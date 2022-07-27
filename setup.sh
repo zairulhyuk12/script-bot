@@ -20,7 +20,7 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bot 
+# https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bot 
 MYIP=$(curl -sS ipv4.icanhazip.com)
 Name=$(curl -sS https://raw.githubusercontent.com/kenzotelco/ip-bot/main/ip-bot | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
@@ -350,7 +350,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/kenzotelco/ip-bot/main/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/syfqsamvpn/access/main/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
