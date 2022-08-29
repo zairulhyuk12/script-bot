@@ -264,7 +264,7 @@ read -rp "Input ur domain : " -e pp
         Then a random domain will be created
         "
         sleep 2
-        sub=ctech`</dev/urandom tr -dc a-z0-9 | head -c4`
+        sub=kenzo`</dev/urandom tr -dc a-z0-9 | head -c4`
         echo "peler=${sub}" > /root/scdomain
     else
         echo "peler=$pp" > /root/scdomain
